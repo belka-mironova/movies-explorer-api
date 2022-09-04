@@ -2,7 +2,7 @@
 
 [Backend Domain](https://api.movies.bellamir.nomoredomains.sbs)
 
-Public IP-address: 51.250.93.32
+Public IP-address: 84.201.131.215
 
 ## Dirs
 
