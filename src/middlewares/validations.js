@@ -26,7 +26,7 @@ const validateMovieData = celebrate({
 
 const validateMovieId = celebrate({
   params: Joi.object().keys({
-    movieId: Joi.number().required(),
+    _id: Joi.string().required().length(24).hex(),
   }),
 });
 
@@ -41,6 +41,7 @@ const validateUserSignUp = celebrate({
   body: Joi.object().keys({
     email: Joi.string().required().email(),
     password: Joi.string().required(),
+    name: Joi.string().min(2).max(30).required(),
   }),
 });
 

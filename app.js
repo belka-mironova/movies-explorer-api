@@ -12,12 +12,13 @@ const { limiter } = require('./src/utils/limiter');
 const app = express();
 
 app.use(helmet());
+
+app.use(requestLogger);
 app.use(limiter);
+
 app.use(cors());
 
 app.use(express.json());
-
-app.use(requestLogger);
 
 app.get('/crash-test', () => {
   setTimeout(() => {
