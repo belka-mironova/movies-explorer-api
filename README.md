@@ -1,6 +1,6 @@
 # Project Movies-explorer backend
 
-[Backend Domain](https://api.movies.bellamir.nomoredomains.sbs)
+[Server](https://api.movies.bellamir.nomoredomains.sbs)
 
 Public IP-address: 84.201.131.215
 
