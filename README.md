@@ -2,7 +2,7 @@
 
 [Server](https://api.movies.bellamir.nomoredomains.sbs)
 
-Public IP-address: 84.201.131.215
+Public IP-address: 178.154.203.9
 
 ## Dirs
 
