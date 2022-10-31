@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const { PORT = 3002, JWT_SECRET = 'f7585a14c9e90b0058253652d000dbf34029c94925d6e9dc8286ff326823d2d5', DATABASE_URL = 'mongodb://localhost:27017/moviesdb' } = process.env;
+const { PORT = 3000, JWT_SECRET = 'f7585a14c9e90b0058253652d000dbf34029c94925d6e9dc8286ff326823d2d5', DATABASE_URL = 'mongodb://localhost:27017/moviesdb' } = process.env;
 const SALT_ROUND = 10;
 const JWT_STORAGE_TIME = '7d';
 module.exports = {
