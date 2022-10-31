@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { userRoutes } = require('./users');
 const { movieRoutes } = require('./movies');
-const { auth } = require('../middlewares/auth');
+// const { auth } = require('../middlewares/auth');
 const { NotFoundError } = require('../errors');
 const { login, createUser } = require('../controller/users');
 const { validateUserSignUp, validateAuthentication } = require('../middlewares/validations');
@@ -9,7 +9,7 @@ const { validateUserSignUp, validateAuthentication } = require('../middlewares/v
 router.post('/signup', validateUserSignUp, createUser);
 router.post('/signin', validateAuthentication, login);
 
-router.use(auth);
+// router.use(auth);
 router.use('/users', userRoutes);
 router.use('/movies', movieRoutes);
 
